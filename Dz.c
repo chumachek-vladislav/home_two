@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
 
 int main() {
@@ -10,7 +10,7 @@ int main() {
 
     // Расчеты
     float total = A * B;
-    float tips_s = total * (C / 100);
+    float tips = total * (C / 100);
 
     // Форматированный вывод результатов
     printf("============================================\n");
