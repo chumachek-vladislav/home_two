@@ -10,7 +10,7 @@ int main() {
 
     // Расчеты
     float total = A * B;
-    float amount = total * (C / 100);
+    float tips_s = total * (C / 100);
 
     // Форматированный вывод результатов
     printf("============================================\n");
@@ -25,10 +25,10 @@ int main() {
     printf(" Общий счет: %.2f руб. * %d = %.2f руб.\n",
         A, B, total);
     printf(" Сумма чаевых: %.2f руб. * %.0f%% = %.2f руб.\n",
-        total, C, amount);
+        total, C, tips);
     printf("\n");
     printf("РЕЗУЛЬТАТ:\n");
-    printf(" Официант получит чаевые: %.2f руб.\n", amount);
+    printf(" Официант получит чаевые: %.2f руб.\n", tips);
     printf("============================================\n");
 
     int x;
@@ -37,9 +37,10 @@ int main() {
     printf("Введите сумму счета на одного человека (руб.): ");
     result = scanf_s("%d", &x);
 
-    double tips = x * 4 * 0.15;
-    printf("Сумма чаевых: %.2f руб.\n", tips);
+    double tips_s = x * 4 * 0.15;
+    printf("Сумма чаевых: %.2f руб.\n", tips_s);
 
     return 0;
 
 }
+
